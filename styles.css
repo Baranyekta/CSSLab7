@@ -1,0 +1,146 @@
+/* setting the font families and their source URLs */
+@font-face {
+    font-family: 'Bubblegum Sans';
+	src: url('https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap');
+}
+
+@font-face {
+	font-family: 'Bungee';
+	src: url('https://fonts.gstatic.com/s/bungee/v7/N0bU2SZBIuF2PU_ECn50Kgc.ttf');
+}
+
+/* base style/layout */
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* header section styles*/
+header {
+	background-color: #ee8f69;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+	padding: 3rem;
+    font-family: 'Bubblegum Sans', cursive;
+    margin-bottom: 1rem;
+}
+
+/* main section styles*/
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /* wrap contents */
+	flex-grow: 1;
+	align-items: stretch;
+}
+
+/* styles for left column*/
+.left {
+	flex-basis: 33.33%; /* width of left column to one third of main section */
+}
+
+/* styles for right column*/
+.right {
+	flex-basis: 66.66%; /* width of right column to two thirds of the main section */
+	display: flex;
+	flex-direction: row; /* setting the flex-direction of right column to column */
+}
+
+/* styles for the sidebar section */
+.sidebar {
+	background-color: #54e0f3;
+	width: 100%;
+	min-width: 250px;
+	padding: 1rem;
+    font-family: 'Bungee', cursive;
+}
+
+/* maximum width of images to 100% and auto height */
+img {
+	max-width: 100%;
+	height:auto;
+}
+
+/* row container styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+/* styling first column in the row */
+.column1 {
+    background-color: #edf5a8;
+    font-family: 'Bungee', cursive;
+    flex-basis: 45%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+}
+
+/* styling second column in the row */
+.column2 {
+    background-color: #edf5a8;
+    font-family: 'Bungee', cursive;
+    flex-basis: 25%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+}
+
+/* styling third column in the row */
+.column3 {
+    background-color: #edf5a8;
+    font-family: 'Bungee', cursive;
+    flex-basis: 28%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+}
+
+/* styling all footers */
+footer {
+	color: #fff;
+	padding: 0.3rem;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styling footer columns below */
+.footer1, .footer2, .footer3 {
+    flex: 1;
+  }
+
+.footer1 {
+    background-color: #fd8c8c;
+    font-family: 'Bungee', cursive;
+    text-decoration: underline;
+    flex-basis: 2%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+}
+
+.footer2 {
+    background-color: #a8f5ac;
+    font-family: 'Bungee', cursive;
+    flex-basis: 15%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem; 
+}
+
+.footer3 {
+    background-color: #a8f5ac;
+    font-family: 'Bungee', cursive;
+    flex-basis: 40%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.3rem;
+}
